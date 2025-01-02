@@ -1,0 +1,14 @@
+{
+    "name": "TheLegends.Base.TestUPM",
+    "rootNamespace": "TheLegends.Base.TestUPM",
+    "references": [],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
