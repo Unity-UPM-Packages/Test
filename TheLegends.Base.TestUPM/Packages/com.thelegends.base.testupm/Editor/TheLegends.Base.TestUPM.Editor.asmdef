@@ -1,8 +1,8 @@
 {
-    "name": "ProjectScope.ProjectName.Editor",
-    "rootNamespace": "ProjectScope.ProjectName.Editor",
+    "name": "TheLegends.Base.TestUPM.Editor",
+    "rootNamespace": "TheLegends.Base.TestUPM.Editor",
     "references": [
-        "ProjectScope.ProjectName"
+        "TheLegends.Base.TestUPM"
     ],
     "includePlatforms": [
         "Editor"

@@ -1,6 +1,6 @@
 {
-    "name": "ProjectScope.ProjectName",
-    "rootNamespace": "ProjectScope.ProjectName",
+    "name": "TheLegends.Base.TestUPM",
+    "rootNamespace": "TheLegends.Base.TestUPM",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

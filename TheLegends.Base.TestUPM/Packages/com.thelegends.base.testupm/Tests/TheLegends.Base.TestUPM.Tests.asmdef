@@ -1,10 +1,10 @@
 {
-    "name": "ProjectScope.ProjectName.Tests",
-    "rootNamespace": "ProjectScope.ProjectName.Tests",
+    "name": "TheLegends.Base.TestUPM.Tests",
+    "rootNamespace": "TheLegends.Base.TestUPM.Tests",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "ProjectScope.ProjectName"
+        "TheLegends.Base.TestUPM"
     ],
     "includePlatforms": [
         "Editor"
