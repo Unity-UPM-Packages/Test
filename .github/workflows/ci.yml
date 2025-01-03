@@ -23,6 +23,11 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Create upm branch
       uses: RageAgainstThePixel/upm-subtree-split@v1
+    - name: Debug semantic release outputs
+      run: |
+        echo "New release published: ${{ steps.semantic.outputs.new_release_published }}"
+        echo "New release version: ${{ steps.semantic.outputs.new_release_version }}"
+
     - name: Create upm git tag
       if: steps.semantic.outputs.new_release_published == 'true'
       run: |
