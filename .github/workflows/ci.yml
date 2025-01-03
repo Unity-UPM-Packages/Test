@@ -30,7 +30,3 @@ jobs:
         git push origin --tags
       env:
         TAG: upm/v${{ steps.semantic.outputs.new_release_version }}
-Beta
-0 / 0
-used queries
-1
