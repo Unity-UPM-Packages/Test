@@ -11,8 +11,6 @@ jobs:
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
-    - name: Create upm branch
-      uses: RageAgainstThePixel/upm-subtree-split@v1
     - name: Semantic release
       id: semantic
       uses: cycjimmy/semantic-release-action@v4
@@ -30,3 +28,5 @@ jobs:
         git push origin --tags
       env:
         TAG: upm/v${{ steps.semantic.outputs.new_release_version }}
+    - name: Create upm branch
+      uses: RageAgainstThePixel/upm-subtree-split@v1
