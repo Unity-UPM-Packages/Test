@@ -1,3 +1,10 @@
+## [1.1.22](https://github.com/Unity-UPM-Packages/Test/compare/v1.1.21...v1.1.22) (2025-01-06)
+
+
+### Bug Fixes
+
+* remove action VERDACCIO ([2e556ac](https://github.com/Unity-UPM-Packages/Test/commit/2e556ac1f79885335e23305a14ce30e600f69964))
+
 ## [1.1.21](https://github.com/Unity-UPM-Packages/Test/compare/v1.1.20...v1.1.21) (2025-01-06)
 
 
