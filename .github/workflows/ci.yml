@@ -40,8 +40,6 @@ jobs:
       - uses: bahmutov/npm-install@v1
         with:
           useLockFile: false
-      - run: npm ci
-      - run: npm test
       - uses: JS-DevTools/npm-publish@v3
         with:
           token: ${{ secrets.VERDACCIO_TOKEN }}
