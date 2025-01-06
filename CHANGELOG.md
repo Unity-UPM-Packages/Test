@@ -1,3 +1,10 @@
+## [1.1.12](https://github.com/Unity-UPM-Packages/Test/compare/v1.1.11...v1.1.12) (2025-01-06)
+
+
+### Bug Fixes
+
+* test Verdaccio ([5490f54](https://github.com/Unity-UPM-Packages/Test/commit/5490f54bddea646ff3cc39bb19993ce31fb3ce53))
+
 ## [1.1.11](https://github.com/Unity-UPM-Packages/Test/compare/v1.1.10...v1.1.11) (2025-01-06)
 
 
