@@ -31,7 +31,7 @@ jobs:
       env:
         TAG: upm/v${{ steps.semantic.outputs.new_release_version }}
     - name: Checkout UPM branch
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
         ref: upm
