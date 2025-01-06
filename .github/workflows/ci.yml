@@ -30,6 +30,10 @@ jobs:
         git push origin --tags
       env:
         TAG: upm/v${{ steps.semantic.outputs.new_release_version }}
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
     - name: Install Dependencies
       run: npm install
     - name: Publish with Verdaccio
