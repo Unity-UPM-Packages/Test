@@ -1,3 +1,10 @@
+## [1.1.11](https://github.com/Unity-UPM-Packages/Test/compare/v1.1.10...v1.1.11) (2025-01-06)
+
+
+### Bug Fixes
+
+* abcd ([932ce28](https://github.com/Unity-UPM-Packages/Test/commit/932ce286221597bccf46d82bc98c530bc9989ca7))
+
 ## [1.1.10](https://github.com/Unity-UPM-Packages/Test/compare/v1.1.9...v1.1.10) (2025-01-06)
 
 
