@@ -1,3 +1,10 @@
+## [1.1.24](https://github.com/Unity-UPM-Packages/Test/compare/v1.1.23...v1.1.24) (2025-01-06)
+
+
+### Bug Fixes
+
+* token ([bb68f44](https://github.com/Unity-UPM-Packages/Test/commit/bb68f442d97b29ac8716d3f07094f4926aa8a1a4))
+
 ## [1.1.23](https://github.com/Unity-UPM-Packages/Test/compare/v1.1.22...v1.1.23) (2025-01-06)
 
 
