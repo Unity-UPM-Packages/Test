@@ -38,6 +38,8 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: "20"
+    - run: npm ci
+    - run: npm test
     - name: Publish to Verdaccio
       uses: JS-DevTools/npm-publish@v3
       with:
