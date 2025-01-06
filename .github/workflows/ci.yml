@@ -30,18 +30,3 @@ jobs:
         git push origin --tags
       env:
         TAG: upm/v${{ steps.semantic.outputs.new_release_version }}
-    - name: Checkout upm branch
-      uses: actions/checkout@v4
-      with:
-        ref: upm
-    - name: Setup Nodejs
-      uses: actions/setup-node@v4
-      with:
-        node-version: "20"
-    - run: npm ci
-    - run: npm test
-    - name: Publish to Verdaccio
-      uses: JS-DevTools/npm-publish@v3
-      with:
-        token: ${{ secrets.VERDACCIO_TOKEN }}
-        registry: "https://verdaccio.tripdev.io"
