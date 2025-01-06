@@ -30,3 +30,15 @@ jobs:
         git push origin --tags
       env:
         TAG: upm/v${{ steps.semantic.outputs.new_release_version }}
+    - name: Checkout UPM branch
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        ref: upm
+    - name: Publish with Verdaccio
+      uses: verdaccio/github-actions/publish@master
+      with:
+        registry_url: ${{ secrets.VERDACCIO_URL }}
+        username: ${{ secrets.VERDACCIO_USERNAME }}
+        password: ${{ secrets.VERDACCIO_PASSWORD }}
+        email: ${{ secrets.VERDACCIO_EMAIL }}
