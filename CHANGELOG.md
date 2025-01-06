@@ -1,3 +1,11 @@
+## [1.1.28](https://github.com/Unity-UPM-Packages/Test/compare/v1.1.27...v1.1.28) (2025-01-06)
+
+
+### Bug Fixes
+
+* akjshfsaf ([fc6abef](https://github.com/Unity-UPM-Packages/Test/commit/fc6abefbc55011348c52819ecdc24d4468d9b1a9))
+* asfsaf ([a78c3a2](https://github.com/Unity-UPM-Packages/Test/commit/a78c3a239c50dee3cb02602871d9f1c0489d580b))
+
 ## [1.1.27](https://github.com/Unity-UPM-Packages/Test/compare/v1.1.26...v1.1.27) (2025-01-06)
 
 
