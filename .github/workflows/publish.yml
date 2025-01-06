@@ -1,0 +1,31 @@
+name: Publish Unity Package to Verdaccio
+on:
+  push:
+    branches:
+    - upm
+jobs:
+  publish:
+    name: publish
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        ref: upm
+     - name: Authenticate with Verdaccio
+      env:
+        VERDACCIO_URL: ${{ secrets.VERDACCIO_URL }}
+        VERDACCIO_USERNAME: ${{ secrets.VERDACCIO_USERNAME }}
+        VERDACCIO_PASSWORD: ${{ secrets.VERDACCIO_PASSWORD }}
+        VERDACCIO_EMAIL: ${{ secrets.VERDACCIO_EMAIL }}
+      run: |
+        echo "Configuring .npmrc..."
+        echo "//${VERDACCIO_URL#http://}/:_authToken=$(echo -n '${VERDACCIO_USERNAME}:${VERDACCIO_PASSWORD}' | base64)" > ~/.npmrc
+        echo "registry=${VERDACCIO_URL}" >> ~/.npmrc
+     - name: Publish with Verdaccio
+      uses: verdaccio/github-actions/publish@master
+      with:
+        registry_url: ${{ secrets.VERDACCIO_URL }}
+        username: ${{ secrets.VERDACCIO_USERNAME }}
+        password: ${{ secrets.VERDACCIO_PASSWORD }}
+        email: ${{ secrets.VERDACCIO_EMAIL }}
