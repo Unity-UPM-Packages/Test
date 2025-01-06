@@ -30,17 +30,17 @@ jobs:
           git push origin --tags
         env:
           TAG: upm/v${{ steps.semantic.outputs.new_release_version }}
-  publish:
-    needs: release
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: upm
-      - uses: bahmutov/npm-install@v1
-        with:
-          useLockFile: false
-      - uses: JS-DevTools/npm-publish@v3
-        with:
-          token: ${{ secrets.VERDACCIO_TOKEN }}
-          registry: ${{ secrets.VERDACCIO_URL }}  
+#  publish:
+#    needs: release
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v4
+#        with:
+#          ref: upm
+#      - uses: bahmutov/npm-install@v1
+#        with:
+#          useLockFile: false
+#      - uses: JS-DevTools/npm-publish@v3
+#        with:
+#          token: ${{ secrets.VERDACCIO_TOKEN }}
+#          registry: ${{ secrets.VERDACCIO_URL }}  
