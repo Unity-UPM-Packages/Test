@@ -7,6 +7,10 @@
       "preset": "angular",
       "changelogFile": "TheLegends.Base.TestUPM/Packages/com.thelegends.base.testupm/CHANGELOG.md"
     }],
+    ["@semantic-release/changelog", { 
+      "preset": "angular",
+      "changelogFile": "CHANGELOG.md"
+    }],
     ["@semantic-release/npm", { "npmPublish": false, "pkgRoot": "TheLegends.Base.TestUPM/Packages/com.thelegends.base.testupm" }],
     ["@semantic-release/git", {
       "assets": [
