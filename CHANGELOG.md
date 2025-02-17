@@ -1,3 +1,10 @@
+## [1.1.33](https://github.com/Unity-UPM-Packages/Test/compare/v1.1.32...v1.1.33) (2025-02-17)
+
+
+### Bug Fixes
+
+* add changelog to npm package folder ([9e0ca8b](https://github.com/Unity-UPM-Packages/Test/commit/9e0ca8b85dcbfde715ea682d243a330177663e70))
+
 ## [1.1.32](https://github.com/Unity-UPM-Packages/Test/compare/v1.1.31...v1.1.32) (2025-01-07)
 
 
