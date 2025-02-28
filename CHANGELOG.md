@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/Unity-UPM-Packages/Test/compare/v1.2.2...v1.2.3) (2025-02-28)
+
+
+### Bug Fixes
+
+* delete file ([0ab5248](https://github.com/Unity-UPM-Packages/Test/commit/0ab524862d069c1e2c920e79341e9676e66c23c5))
+
 ## [1.2.2](https://github.com/Unity-UPM-Packages/Test/compare/v1.2.1...v1.2.2) (2025-02-28)
 
 
