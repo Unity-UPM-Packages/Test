@@ -1,23 +1,20 @@
 {
   "tagFormat": "v${version}",
+  "branches": [
+    "master",
+    {
+      "name": "beta",
+      "prerelease": true,
+      "channel": "beta"
+    }
+  ],
   "plugins": [
     ["@semantic-release/commit-analyzer", { "preset": "angular" }],
     "@semantic-release/release-notes-generator",
-    ["@semantic-release/changelog", { 
-      "preset": "angular",
-      "changelogFile": "TheLegends.Base.TestUPM/Packages/com.thelegends.base.testupm/CHANGELOG.md"
-    }],
-    ["@semantic-release/changelog", { 
-      "preset": "angular",
-      "changelogFile": "CHANGELOG.md"
-    }],
-    ["@semantic-release/npm", { "npmPublish": false, "pkgRoot": "TheLegends.Base.TestUPM/Packages/com.thelegends.base.testupm" }],
+    ["@semantic-release/changelog", { "preset": "angular" }],
+    ["@semantic-release/npm", { "npmPublish": false, "pkgRoot": "ads.manager/Packages/com.thelegends.ads.manager" }],
     ["@semantic-release/git", {
-      "assets": [
-        "TheLegends.Base.TestUPM/Packages/com.thelegends.base.testupm/package.json",
-        "TheLegends.Base.TestUPM/Packages/com.thelegends.base.testupm/CHANGELOG.md",
-        "CHANGELOG.md"
-      ],
+      "assets": ["ads.manager/Packages/com.thelegends.ads.manager/package.json", "CHANGELOG.md"],
       "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
     }],
     "@semantic-release/github"

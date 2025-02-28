@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - beta
 jobs:
   release:
     name: release
@@ -18,22 +19,8 @@ jobs:
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
-          branch: master
+          branch: ${{ github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Create upm branch
         uses: RageAgainstThePixel/upm-subtree-split@v1
-#  publish:
-#    needs: release
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v4
-#        with:
-#          ref: upm
-#      - uses: bahmutov/npm-install@v1
-#        with:
-#          useLockFile: false
-#      - uses: JS-DevTools/npm-publish@v3
-#        with:
-#          token: ${{ secrets.VERDACCIO_TOKEN }}
-#          registry: ${{ secrets.VERDACCIO_URL }}  
