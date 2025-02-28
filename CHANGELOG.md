@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/Unity-UPM-Packages/Test/compare/v1.3.1...v1.3.2) (2025-02-28)
+
+
+### Bug Fixes
+
+* add new file ([c5d1c2e](https://github.com/Unity-UPM-Packages/Test/commit/c5d1c2e4013c7d039a631b6588a3e6704fd05181))
+
 ## [1.3.1](https://github.com/Unity-UPM-Packages/Test/compare/v1.3.0...v1.3.1) (2025-02-28)
 
 
